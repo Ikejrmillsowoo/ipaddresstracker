@@ -7,7 +7,7 @@ function UserInput() {
         <Form>
             <FormGroup className='input_form mx-auto'>
              <Input placeholder="Search for any IP address or domain"/>
-             <Button color="secondary"><i className="fa fa-search">button</i></Button>
+             <Button  className="button"><i className="fa fa-search">button</i></Button>
             </FormGroup>
         </Form>
     )

@@ -5,11 +5,11 @@ import UserInput from '../InputComponent'
 
 function Header() {
 
-    const img = "./"
+    
 
     return (
         <div className="header" style={{ backgroundImage: "url(/images/pattern-bg.png)" }}>
-            <h1 className="text-center">IP Address Tracker</h1>
+            <h3 className="text-center">IP Address Tracker</h3>
             <UserInput />
         </div>
     )

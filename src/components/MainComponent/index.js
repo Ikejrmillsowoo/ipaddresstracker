@@ -6,9 +6,14 @@ import './index.css'
 
 function Main() {
     return (
-        <div >
-            <Header />
-           <Map />  
+        <div className="main">
+            <div>
+                 <Header />
+            </div>
+            <div>
+                <Map /> 
+            </div>
+            
         </div>
     )
 }

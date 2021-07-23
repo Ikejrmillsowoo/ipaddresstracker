@@ -2,5 +2,12 @@
 
 .App {
   font-family: 'Rubik', sans-serif;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 98%;
+  height: 100%;
+  margin: auto;
+  color: white;  
 }
 
