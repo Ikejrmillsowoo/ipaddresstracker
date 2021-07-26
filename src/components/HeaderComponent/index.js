@@ -9,7 +9,7 @@ function Header() {
 
     return (
         <div className="header" style={{ backgroundImage: "url(/images/pattern-bg.png)" }}>
-            <h3 className="text-center">IP Address Tracker</h3>
+            <h3 className="text-center pt-3">IP Address Tracker</h3>
             <UserInput />
         </div>
     )

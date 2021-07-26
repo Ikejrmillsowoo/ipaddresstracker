@@ -2,3 +2,12 @@
    margin: auto;
    height: 60vh;
 }
+
+
+.middle_insert {
+    position: absolute;
+    width: 60%;
+    z-index: 1000;
+    top: 150px;
+    right: 250px;
+}
