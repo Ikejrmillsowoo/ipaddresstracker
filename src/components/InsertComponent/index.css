@@ -1,5 +1,30 @@
 .insert {    
+    display: flex;
+    flex-direction: row;
+    border: solid white;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 0;
 
+}
+
+.insert .card {
+    border: none;
+    border-radius: 0;
+    border-right: lightgray solid 1px;
+    border-right-style: unset;
+    padding-top: 5px;
+}
+
+.insert h6 {
+    color: gray;
+    background-color: white;
+    border: none;
+}
+inser h3 {
+    font-size: larger;
 }
 
 

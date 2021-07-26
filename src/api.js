@@ -1,5 +1,8 @@
-const url = "https://geo.ipify.org/api/v1?apiKey=at_nHAchEA9FahlplVslwXKRlTJfZV5m&ipAddress=8.8.8.8"
-const apiKey = "at_nHAchEA9FahlplVslwXKRlTJfZV5m"
+import { apiKey } from "./sourceData"
+
+export const ipAddress  = "8.8.8.8"
+const url = `https://geo.ipify.org/api/v1?apiKey=${apiKey}=${ipAddress}`
+
 
 async function fetchData() {
     const response = await fetch(url)
@@ -8,6 +11,4 @@ async function fetchData() {
     return responseJSON
 }
 
-export default function Api() {
-    fetchData() 
-}
+export default fetchData
