@@ -6,6 +6,13 @@
     align-items: center;
 }
 
+.entry_form {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 button {
     background-color: black;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }

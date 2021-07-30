@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './index.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Button, Form, FormGroup, Input } from 'reactstrap'
@@ -6,18 +6,27 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 function UserInput(props) {
 
-   const onChange =(e) => {
-        const target = e.target
-        const value = target.value
-        console.log(value)
+    const [newApi, setNewApi] = useState({
+        value: ''
+    })
 
-        e.preventDefault()
+   const onChange =(e) => {       
+        setNewApi({
+            value: e.target.value
+        })
     }
+
+    const reset = () => {
+        setNewApi({value: ''})
+    }
+
+//console.log(newApi.value)
     return (
-        <Form>
-            <FormGroup  onSubmit={props.onSubmit} className='input_form mx-auto' >
-             <Input onChange={onChange} placeholder="Search for any IP address or domain"/>
-             <Button type="submit" onSubmit={props.onSubmit}><FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon></Button>
+        <Form onSubmit={(e) => props.onSubmit(e, newApi.value)}
+        reset={reset}>
+            <FormGroup className='input_form mx-auto' >
+             <Input value={newApi.value} className="entry_form" onChange={onChange} name="entry" id="entry" placeholder="Search for any IP address or domain"/>
+             <Button type="submit" value="submit"><FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon></Button>
             </FormGroup>
         </Form>
     )
