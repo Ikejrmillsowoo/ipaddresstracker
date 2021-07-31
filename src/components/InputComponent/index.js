@@ -16,14 +16,11 @@ function UserInput(props) {
         })
     }
 
-    const reset = () => {
-        setNewApi({value: ''})
-    }
 
 //console.log(newApi.value)
     return (
         <Form onSubmit={(e) => props.onSubmit(e, newApi.value)}
-        reset={reset}>
+        >
             <FormGroup className='input_form mx-auto' >
              <Input value={newApi.value} className="entry_form" onChange={onChange} name="entry" id="entry" placeholder="Search for any IP address or domain"/>
              <Button type="submit" value="submit"><FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon></Button>

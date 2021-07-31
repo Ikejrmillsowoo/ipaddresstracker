@@ -5,9 +5,11 @@ import Map from '../MapComponent'
 import './index.css'
 
 function Main() {
-    
+   
 
      const [api, setApi] = useState('')
+
+     const [data, setData] = useState('')
 
     const onSubmit =(e, newApi)=> {       
         setApi(newApi)
@@ -15,15 +17,22 @@ function Main() {
         e.preventDefault()
     }
 
+    const getData=(dataFetched) => {
+       // console.log(dataFetched)
+        setData(dataFetched)
+    }
+
+    //console.log(data.data)
+       
     return (
         <div >
             <div className="middle_insert mt-3">
-                <Api api={api}/>
+                <Api api={api} getData={getData}/>
             </div>
         <div className="main">
             <div className="head">
                  <Header onSubmit={onSubmit}/>
-                <Map /> 
+                <Map data={data.data}/> 
             </div>
         </div>
        

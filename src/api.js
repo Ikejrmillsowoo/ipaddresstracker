@@ -7,6 +7,7 @@ export const ipAddress  = "8.8.8.8"
 const url = `https://geo.ipify.org/api/v1?`
 
 function FetchData(props) {
+    //console.log(props)
     
     const ipAddress = props.api
     
@@ -18,7 +19,7 @@ function FetchData(props) {
         async function getData() {
             const response = await fetch(`${url}apiKey=${apiKey}&ipAddress=${ipAddress}`)
             const responseJSON = await response.json()
-            console.log(responseJSON)
+            //console.log(responseJSON)
             setData({
                 data: responseJSON
             })
