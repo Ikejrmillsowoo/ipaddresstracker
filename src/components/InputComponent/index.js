@@ -17,7 +17,7 @@ function UserInput(props) {
     }
 
 
-//console.log(newApi.value)
+
     return (
         <Form onSubmit={(e) => props.onSubmit(e, newApi.value)}
         >

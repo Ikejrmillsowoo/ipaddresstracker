@@ -1,14 +1,11 @@
+.full_main {
+    margin-top: 100px;
+}
+
 .main {
    margin: auto;
    height: 60vh;
+   
 }
 
 
-.middle_insert {
-    position: absolute;
-    width: 70%;
-    z-index: 1000;
-    top: 150px;
-    right: 250px;
-    padding: 0;
-}

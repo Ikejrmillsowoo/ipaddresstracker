@@ -17,19 +17,19 @@ function Insert(props) {
                 </Card>
             {/* </Col>
             <Col> */}
-                <Card className="col-3 text-dark">
+                <Card className="col-3  text-dark">
                     <CardHeader tag="h6">Location</CardHeader>
                     <CardBody tag="h5">{props.data.location.city}, {props.data.location.region}<br /> {props.data.location.postalCode}</CardBody>
                 </Card>
             {/* </Col>
             <Col> */}
-                <Card className="col-3 text-dark">
+                <Card className="col-3  text-dark">
                     <CardHeader tag="h6">Time- Zone</CardHeader>
                     <CardBody tag="h5">{props.data.location.timezone}</CardBody>
                 </Card>
             {/* </Col>
             <Col> */}
-                <Card className="col-3 text-dark">
+                <Card className="col-3  text-dark">
                     <CardHeader tag="h6">ISP</CardHeader>
                     <CardBody tag="h5">{props.data.isp}</CardBody>
                 </Card>

@@ -7,8 +7,13 @@
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;
     padding: 0;
-    
-
+    width: 70%;
+    margin: auto;
+    position: absolute;
+    z-index: 1000;
+    width: 70%;
+    top: 150px;
+    right: 200px;
 }
 
 .insert .card {
@@ -20,7 +25,7 @@
 }
 
 .insert h6 {
-    color: gray;
+    color: hsl(0, 0%, 59%);
     background-color: white;
     border: none;
     font-size: 10px;
@@ -28,8 +33,24 @@
 .insert h5 {
     font-size: larger;
     font-size: 15px;
+    color: hsl(0, 0%, 17%);
 }
 
+
+@media screen and (max-width: 375px) {
+    .insert {
+     display: flex;
+     flex-direction: column;
+     z-index: 1000;
+     margin: auto;
+     top: 100px;
+    right: 50px;
+    }
+
+    .insert .card {
+        width: 100%
+    }
+  }
 
 
 
