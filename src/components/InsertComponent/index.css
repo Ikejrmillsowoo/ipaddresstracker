@@ -12,8 +12,8 @@
     position: absolute;
     z-index: 1000;
     width: 70%;
-    top: 150px;
-    right: 200px;
+    top: 25%;
+    right: 15%;
 }
 
 .insert .card {
@@ -43,12 +43,20 @@
      flex-direction: column;
      z-index: 1000;
      margin: auto;
-     top: 100px;
-    right: 50px;
+     top: 28%;
+     height: 10%;  
+     width: 70%; 
+     
     }
 
     .insert .card {
-        width: 100%
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .insert h5,
+    .insert h6 {
+        padding: 0;
     }
   }
 

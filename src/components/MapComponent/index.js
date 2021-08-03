@@ -24,7 +24,7 @@ function Map(props) {
                 />
                 <Marker position={location}>
                     <Popup>
-                        {props.data.city}, {props.data.region}
+                        `You are in ${props.data.city}, ${props.data.region}`
                     </Popup>
                 </Marker>
             <ChangeMapView coords={location}/>
